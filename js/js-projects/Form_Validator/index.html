@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <script src="./script.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Form Validator</h2>
+    <form name="form1" onsubmit="validateForm()">
+      <div id="username">
+        <label for=""> Username</label>
+        <input type="text" name="username" placeholder="Username" />
+        <b><span class="formError"></span></b>
+      </div>
+
+      <div id="email">
+        <label>email</label>
+        <input type="email" name="email" placeholder="Email" />
+        <b><span class="formError"></span></b>
+      </div>
+
+      <div id="password">
+        <label>password</label>
+        <input type="password" name="password" placeholder="Password" />
+
+        <b><span class="formError"></span></b>
+      </div>
+
+      <div id="confirm">
+        <label>confirm password</label>
+        <input
+          type="password"
+          name="confirmPassword"
+          placeholder="Confirm Password"
+        />
+        <b><span class="formError"></span></b>
+      </div>
+
+      <button type="submit" name="submit">Submit Form</button>
+    </form>
+  </body>
+</html>
